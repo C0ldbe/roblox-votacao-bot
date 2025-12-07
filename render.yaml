@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: roblox-vote-bot
+    runtime: python
+    buildCommand: ""
+    startCommand: "python bot.py"
+    envVars:
+      - key: TOKEN
+        sync: false
+      - key: CHANNEL_ID
+        sync: false
